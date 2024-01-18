@@ -1,7 +1,2 @@
-{
-	"label": "newFile",
-	"command:: "touch '${workspaceFolder}/README.md'";
-	 // to create_and_open_it_immediately
- // "command": "touch '${workspaceFolder}/README.md' && code '${workspaceFolder} /READ.md'",
- "type": "shell"
-}
+#!/bin/bash
+gcc -E $CFILE -o c
