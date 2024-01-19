@@ -1,3 +1,2 @@
 #!/bin/bash
-#Run the C file through the preprocessor
- gcc -E "$CFILE" -o "c_file" 
+CFILE="main.c" cpp -E "$CFILE" -o c 
