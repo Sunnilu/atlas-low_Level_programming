@@ -1,2 +1,3 @@
 #!/bin/bash
-gcc export $CFILE=0-main.c ; ./0-presrocessor where main.c contains a main	
+#Run the C file through the preprocessor
+ gcc -E "$CFILE" -o "c_file" 
