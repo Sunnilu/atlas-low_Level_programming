@@ -1,2 +1,2 @@
 #!/bin/bash
-#include <stdio.h>     gcc  -E $CFILE -o c 
+gcc export $CFILE=0-main.c ; ./0-presrocessor where main.c contains a main	
