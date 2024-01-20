@@ -1,18 +1,9 @@
 #include <stdio.h>
- * main - Print all single digit numbers of base 10 starting from 0 only using putchar and without char variables
- *
- * return: always 0.
- * ?
- * int main (void)
- * {
-       int num
+int main() {
+    // Use putchar to print the single-digit numbers
+    putchar('0');
+    putchar('\n' + 0);
 
-       for (num = 0; num < 10; num ++
-           putchar ((num % 10) + '0' );
-
-	   putchar('/n')
-
-	   return (0);
-
-	   }	   
+    return 0;
+}
 
