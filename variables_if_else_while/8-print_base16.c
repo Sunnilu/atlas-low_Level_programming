@@ -7,14 +7,17 @@
  */
 int main(void)
 {
-    putchar('0');
-    putchar('x');
+    char hexDigit;
 
-    for (char c = '0'; c <= '9' || (c >= 'a' && c <= 'f'); c++)
-        putchar(c);
+    for (hexDigit = '0'; hexDigit <= '9'; hexDigit++)
+        putchar(hexDigit);
+
+    for (hexDigit = 'a'; hexDigit <= 'f'; hexDigit++)
+        putchar(hexDigit);
 
     putchar('\n');
 
     return (0);
 }
+
 
