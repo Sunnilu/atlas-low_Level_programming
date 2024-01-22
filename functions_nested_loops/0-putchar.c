@@ -1,19 +1,25 @@
+#include <stdio.h>
 #include "main.h"
-#include <stdio.h
->
-**
-* main - entry_point
-* return: always 0
-	* /
- int main(void)
-{
-   _putchar('_');
-   _putchar('p');
-   _putchar('u');
-   _putchar('t');
-   _putchar('c');
-   _putchar('h');
-   _putchar('a');
-   _putchar('r');
+
+void _putchar(char c) {
+    /* Your implementation of _putchar goes here */
+}
+
+int my_putchar(void) {
+    _putchar('_');
+    _putchar('p');
+    _putchar('u');
+    _putchar('t');
+    _putchar('c');
+    _putchar('h');
+    _putchar('a');
+    _putchar('r');
+    _putchar('\n');
     return 0;
 }
+
+int main() {
+    return my_putchar();
+}
+
+
