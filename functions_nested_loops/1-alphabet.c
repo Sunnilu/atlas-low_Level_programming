@@ -1,20 +1,18 @@
 #include "main.h"
 
-void _putchar(char c) {
-    /* Your implementation of _putchar goes here */
-}
+/**
+ * print_alphabet - make the alphabet
+ * return: void
+ */
 
-void print_alphabet(void) {
-    char letter = 'a';
-    while (letter <= 'z') {
-        _putchar(letter);
-        letter++;
-    }
+void print_alphabet(void)
+
+{
+     char c;
+
+     for (c = 'a'; c <= 'z'; c++)
+     {
+     _putchar(c);
+     }
     _putchar('\n');
-}
-
-int main() {
-    print_alphabet();
-    return 0;
-}
-
+}    
