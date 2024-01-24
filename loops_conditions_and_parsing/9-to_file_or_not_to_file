@@ -1,4 +1,4 @@
-#!usr/bin/bash
+#!/usr/bin/env bash
 
 # give information about the file school
 
