@@ -1,1 +1,12 @@
-putchar( ) function is used to display one character at a time on the monitor
+#include <stdio.h>
+#include "main.h"
+
+int main () {
+   char ch;
+
+   for(ch = 'A' ; ch <= 'z' ; ch==) {
+      putchar(ch);
+   }
+
+   return (0);
+}
