@@ -1,21 +1,15 @@
-#include <stdio.h>
+#include "main.h"
 
 void print_most_numbers(void)
-{	
-  int i;
 
-  for (i = 0; i < 10; i++)
-  {
-      if (i != 2 && i !=4)
-      {
-	  printf("%d", i);
-      }
-  }
-  printf("\n");
+void _putchar(char c);
+     char digit;
+
+  for (digit = '0'; digit <= '9'; digit++) {
+        if (digit != '2' && digit != '4') {
+            _putchar(digit);
+        }
+    }
+
+    _putchar('\n');
 }
-
-int main(void)
-{
-     print_most_numbers();
-     return 0;
-}     
