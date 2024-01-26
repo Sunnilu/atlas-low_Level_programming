@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
@@ -6,6 +5,7 @@
  * multiples of three print Fizz
  * instead of the number and for the multiples of five print Buzz
  * for numbers which are multiples of both 3 and 5 print FizzBuzz
+ * each number or word should be separated by a space
  * return: 0
  */
 
@@ -14,13 +14,13 @@ int main(void) {
 
     for (i = 1; i <= 100; i++) {
         if (i % 3 == 0 && i % 5 == 0) {
-            printf("FizzBuzz\n");
+            printf("FizzBuzz ");
         } else if (i % 3 == 0) {
-            printf("Fizz\n");
+            printf("Fizz ");
         } else if (i % 5 == 0) {
-            printf("Buzz\n");
+            printf("Buzz ");
         } else {
-            printf("%d\n", i);
+            printf("%d ", i);
         }
     }
 
