@@ -3,32 +3,34 @@
 /**
  * print_triangle - prints a triangle of squares according to size
  * @size: the size of the squares triangle
- * return: empty
+ * return:0
  */
 
 void print_triangle(int size)
  	
 { 
     
-  
-   
+int x;
+int y;
+int z;
+
     if (size <= 0)
     {
-    putchar('\n');
+    	_putchar('\n');
     }
     else
-    {
-    for (int x = 0; x < size; x++)
-    {
-    for (int y = size -x; y > 1; y--)
-    {
-    putchar(' ');
-    }
-    for (int z = 0; z <= x; z++) 
-    {
-    putchar('#');
-    }
-    putchar('\n');
-    }
-    }
+  	 {
+    	for (x = 0; x < size; x++)
+	{
+		for ( y = size -x; y > 1; y--)
+		{
+    			_putchar(' ');
+		}
+    		for (z = 0; z <= x; z++) 
+    	{
+    			_putchar('#');
+    	}
+    		_putchar('\n');
+    	}
+    	}
 }
