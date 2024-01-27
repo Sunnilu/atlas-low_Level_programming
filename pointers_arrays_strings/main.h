@@ -1,3 +1,6 @@
+#ifndef MAIN_H
+#define MAIN_H
+
 int _putchar(char c);
 void swap_int(int *a, int *b);
 void reset_to_98(int *n);
@@ -10,3 +13,5 @@ void puts_half(char *str);
 char *_strcpy(char *dest, char *src);
 void print_array(int *a, int n);
 int _atoi(char *s);
+
+#endif /* MAIN_H */
