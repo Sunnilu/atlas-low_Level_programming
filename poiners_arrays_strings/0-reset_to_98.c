@@ -8,4 +8,3 @@
 int n = 98;
 int *p = &n;
 
-done
