@@ -1,33 +1,36 @@
+#include "main.h"
 #include <stdio.h>
 
 /**
- * write a function that convert a string to an integer
- * not allowed to use long
- * return: 0
+ * _atoi - convert a string to an integer
+ * @s: put a string
+ * returnL a integer
  */
 
-int _atoi(char *s);
+int _atoi(char *s)
 
-int main(void)
 {
-	int nb;
+	unsigned int count = 0, size = 0, oi = 0, pn = 1, m = 1, i;
+
+	while (*(s + count) != '\0')
+	{
+	  if (size > 0 && (*(s + count) < '0' || *(s + count) > '9' ))
+
+	   break;
+
+	  if (*(s + count) == '-')
+     	   pn *= -1;
+
+	  if (*(s + count) >= '0' && *(s + count) <= '9')
+	      size++;
+	  count++;
+	}	  
+     	
+	for (i = 0; i < size; i++)
+	{	
+	    oi += (*(s + count - 1 -i) - '0') * m;
+	    m *= 10;
+	}	    
 	
-;	nb = _atoi("98");
-    printf("%d\n", nb);
-    nb = _atoi("-402");
-    printf("%d\n", nb);
-    nb = _atoi("          ------++++++-----+++++--98");
-    printf("%d\n", nb);
-    nb = _atoi("214748364");
-    printf("%d\n", nb);
-    nb = _atoi("0");
-    printf("%d\n", nb);
-    nb = _atoi("Suite 402");
-    printf("%d\n", nb);
-    nb = _atoi("         +      +    -    -98 Battery Street; San Francisco, CA 94111 - USA             ");
-    printf("%d\n", nb);
-    nb = _atoi("---++++ -++ Sui - te -   402 #cisfun :)");
-    printf("%d\n", nb);
-	
-	return 0;
-}	
+        return (oi * pn);
+}	 	   	  
