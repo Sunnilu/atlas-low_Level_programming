@@ -25,7 +25,7 @@ int _atoi(char *s)
 	  		count++;
 		
 		for (i = 0; i < size; i++)
-		{		
+			
 	    		oi += (*(s + count - 1 -i) - '0') * m;
 	    		m *= 10;
 		}	    
