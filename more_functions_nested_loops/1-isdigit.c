@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * function that checks for a digit 0 through 9
+ * write a function that checks for a digit 0 through 9
  * @c: is a digit
  * return: 0
  */
