@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * "_strcpy - pointer to a character
+ * _strcpy - pointer to a character
  * @ dest: string 1 pointer to a char
  * @scr: string 2 pointer to a char
  * return: character (dest)
