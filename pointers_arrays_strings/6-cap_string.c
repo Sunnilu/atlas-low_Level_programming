@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -6,33 +7,16 @@
  * return: a pointer to the changed string
  */
 
-char *cap_string(char *str)
+char *cap_string(char *str);
 
-{ 
-	//iterate over the string
-	 for (int i = 0; str[i]; i++)
-	{ 
-	// check if the current character is a word boundary
-		if (str[i] == ' ' ||
-		str[i] == '\t' ||
-		str[i] == '\n' ||
-		str[i] == ',' ||
-		str[i] == ';' ||
-		str[i] == '.' ||
-		str[i] == '!' ||
-		str[i] == '?' ||
-		str[i] == '"' ||
-		str[i] == '(' ||
-		str[i] == ')' ||
-		str[i] == '{' ||
-		str[i] == '}' ||)
-		{ 
-       			// convert the next caracter to uppercase
-			if (str[i+1] >= 'a' && str[i+1] <= 'z')
-		{	
-			str[i+1] = str[i+1] - 'a' + 'A';
-		}
-	    }		
-	   }      	
-			return (str);
-}		
+int main(void)
+{
+    char sentence[] = "this is a test sentence.";
+    printf("Original: %s\n", sentence);
+    
+    cap_string(sentence);
+    
+    printf("Capitalized: %s\n", sentence);
+
+    return 0;
+}  
