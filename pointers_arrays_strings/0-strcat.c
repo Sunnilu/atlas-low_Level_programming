@@ -6,6 +6,9 @@
  * _strcat -  concatenates two strings
  * @:src: the source string
  * @:dest: the destination string
+ * appendthe src string to the dest string, overwriting and terminating
+ * null byte (\0) at the end of the dest and adds a termination null byte
+ * returning the pointer to the resulting string dest
  * return: a pointer to the resulting string dest
  */
 
