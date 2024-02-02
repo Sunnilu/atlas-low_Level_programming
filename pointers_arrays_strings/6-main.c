@@ -3,7 +3,7 @@
 
 /**
  * main - check the code
- *
+ * cap_string conversion of whole string to uppercase or lowercase
  * Return: Always 0.
  */
 int main(void)
