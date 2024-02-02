@@ -3,7 +3,6 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
-gcc main.c cap_string.c -o program
 
 char *_strcat(char *dest, char *src);
 char *_strncat(char *dest, char *src, int n);
