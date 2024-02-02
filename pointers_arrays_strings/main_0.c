@@ -3,11 +3,9 @@
 
 /**
  * main - check the code
- * cap_string conversion of whole string to uppercase or lowercase
+ *
  * Return: Always 0.
  */
-
-char *cap_string(char *str);
 int main(void)
 {
     char str[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\nhello world! hello-world 0123456hello world\thello world.hello world\n";
