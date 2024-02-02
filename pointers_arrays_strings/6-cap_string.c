@@ -34,8 +34,8 @@ char *cap_string_(char *str)
 	     		str[index - 1] == ')' ||
 	     		str[index - 1] == '{' ||
              		str[index - 1] == '}' ||
-	    	 	index == 0)     
-	          		str[index] = toupper(str[index]); 
+	    	 	index == 0) {     
+	          		str[index] = toupper(str[index]); }
            		index++;
 	}	
     return (str);
