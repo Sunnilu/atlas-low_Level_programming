@@ -24,6 +24,17 @@ char *leet(char *str) {
         }
         i++;
     }	
-
+	
     return str;
-}    
+}
+
+int main() {
+    char sentence[] = "Leet Speak";
+    printf("Original: %s\n", sentence);
+
+    leet(sentence);
+
+    printf("1337 Speak: %s\n", sentence);
+
+    return 0;
+}
