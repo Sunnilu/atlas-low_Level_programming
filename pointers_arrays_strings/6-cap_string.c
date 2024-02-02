@@ -33,7 +33,14 @@ char *cap_string_(char *str)
             str[index] = toupper(str[index]);
         }
 
-        index++;
+        index++; {
+		 char *ptr;
+
+    ptr = cap_string(str);
+    printf("%s", ptr);
+    printf("%s", str);
+    return (0);
+	}
     }
 
     return str;
