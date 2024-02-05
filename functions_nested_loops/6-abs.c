@@ -6,14 +6,14 @@
  * return: absolute value of number or zero
  */
 
-int _abs( int num)
+int _abs(int num)
 {
 	if (num < 0)
 	{
-	return -(num);
+	return (-num);
 	}
 	else
-	{	
+	{
 	return (num);
 	}
-}	
+}
