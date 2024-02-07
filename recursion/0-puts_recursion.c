@@ -10,20 +10,18 @@
 void _puts_recursion(char *s)
 
 {
-	// base case: if the string is empty or null, stop the recursion
 	if (*s == '\0')
 	{
-		return:
+		return;
 	}
 	
-	// Recursive case: print the current character and move to the next character
 	putchar(*s);
 	_puts_recursion(s + 1);
 }
 
-int main (void)
+int main()
 {
-	_puts_recursion("Puts_with_recursion");
-
-	return (0)
+	char str[] = "Puts with recursion!";
+	_puts_recursion(str);	
+	return (0);
 }
