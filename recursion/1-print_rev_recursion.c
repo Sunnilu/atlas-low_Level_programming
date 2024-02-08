@@ -1,25 +1,23 @@
 #include <stdio.h>
 
 /**
- * print string in reverse
- * @s: string
- * return: str
+ * print reverse of the pased string
+ * @s: if the string is empty or points to null
+ * return: reverse string 
  */
 
 void _print_rev_recursion(char *s)
-{
-	if (*s == '\0')
-	{
-		return;
-	}
-	_print_rev_recursion(s + 1);
-	printf("%c", *s);
-}
 
 int main()
 {
-	char str[] = "Colton_ Walker";
-	_print_rev_recursion(str);
+	char s[] = "Colton Walker";
+	_print_rev_recursion(s);
 	printf("\n");
-	return (0);
+
+	return 0;
 }
+	{
+	if (*s != "\n")
+		print_reverse(s + 1);
+		printf("%c", *s);
+	}	
