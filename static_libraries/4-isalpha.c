@@ -1,0 +1,4 @@
+
+int isalpha(int c)
+{
+}
