@@ -30,5 +30,18 @@ int _sqrt(int n, int i)
 	if (sqrt == n)
 		return i;
 	return _sqrt(n, i + 1);
+}
 
+int main()
+{
+	int num = 16;
+
+	int result = sqrt_recursion(num);
+
+	if (result == -1)
+		printf("square root not found for %d\n", num);
+	else
+		printf("square root of %d is %d\n", num, result);
+	
+	return 0;
 }
