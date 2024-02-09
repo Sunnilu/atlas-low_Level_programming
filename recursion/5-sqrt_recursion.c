@@ -20,7 +20,7 @@ int sqrt_a(int a, int b)
 	}
 	return (sqrt_a(a, b + 1));
 }
-/** 
+/**
  * _sqrt -recursion - returns the natural square root of a number
  * @n: the input number
  * return: the natural square root
