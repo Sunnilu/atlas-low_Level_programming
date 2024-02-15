@@ -11,3 +11,8 @@ void times_table(void);
 int add(int, int);
 void print_to_98(int n);
 void print_times_table(int n);
+char *_strdup(char *str);
+char *str_concat(char *s1, char *s2);
+char *create_array(unsigned int size, char c);
+int **alloc_grid(int width, int height);
+void free_grid(int **grid, int height);
