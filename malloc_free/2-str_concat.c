@@ -34,7 +34,7 @@ char *str_concat(char *s1, char *s2)
 
 	o = 0;
 
-	while (d < k)
+	while (c < k)
 	{
 		if (c <= j)
 			s[c] = s1[c];
@@ -47,6 +47,6 @@ char *str_concat(char *s1, char *s2)
 		c++;
 	}
 
-	S[c] = '\0';
+	s[c] = '\0';
 	return (s);
 }
