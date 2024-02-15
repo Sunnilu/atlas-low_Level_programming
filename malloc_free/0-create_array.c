@@ -3,7 +3,7 @@
 
 /**
  * create_array of chars and initializes with specific char
- * @c: the specific char 
+ * @c: the specific char
  * @size: the size of the the memory to print
  * return: NULL if size is 0
  */
