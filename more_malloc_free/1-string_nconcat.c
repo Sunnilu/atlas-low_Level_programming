@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * string_nconcat - concatenates two strings
+ * string_nconcat - concatenates two strings, ASCll text in quotes
  * @s1: newly allocated space in memory
  * @s2: return pointer
  * @n: if greater or equal in length of s2,use entire string
