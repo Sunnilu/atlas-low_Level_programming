@@ -1,13 +1,15 @@
 #include <stdlib.h>
 #include "dog.h"
-#include <string.h>
+#define MAIN_H
+#ifndef MAIN_H
+
 
 /**
  * new_dog - there is now a new dog in play
  * @name: the new dogs name
  * @age: the new dogs age
  * @owner: who is the owner of this dog
- * _strcpy - copies- duplicates one string to another
+ * _strcpy -  duplicates one string to another
  * return: nothing
  */
 
@@ -56,6 +58,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 /**
  * _strlen - returns the length of the string
  * @s: string to count
+ * _strcpy - copies one string to another
  * return: string length
  */
 int _strlen(char *s)
@@ -68,5 +71,6 @@ int _strlen(char *s)
 	}
 	return (k);
 }
+#endif
 
 
