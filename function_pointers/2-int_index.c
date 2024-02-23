@@ -3,7 +3,7 @@
 
 /**
  * int_index - searches for integer
- * @array: a place to store in a row
+ * @arraycmp: a pointer to the function to be used to compare values
  * @size: the number
  * return: 0
  */
