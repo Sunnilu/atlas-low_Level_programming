@@ -4,7 +4,7 @@
 /**
  * int_index - searches for integer
  * @array: a place to store in a row
- * @size: the number 
+ * @size: the number
  * return: 0
  */
 
