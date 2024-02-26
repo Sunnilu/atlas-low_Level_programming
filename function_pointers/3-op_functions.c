@@ -47,7 +47,7 @@ int op_mod(int a, int b)
 		exit(100);
 	}
 
-	return(a % b);
+	return (a % b);
 }
 /**
  * op_div - returns the remainder of the division
