@@ -7,7 +7,7 @@
  * @argc:the integer bariable that wil store the number
  * @argv:character pointer listing all arguments
  * @atoi: to convert argument into integer
- * return: 100
+ * return: 0
  */
 
 int main(int argc, char *argv[])
@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	oprt + get_op_func(argv[2]);
+	oprt = get_op_func(argv[2]);
 
 	if (!oprt)
 	{
@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	printf("%d\n", oprt(atoi(argv[1], atoi(argv[3])));
+	printf("%d\n", oprt(atoi(argv[1]), atoi(argv[3])));
 	return (0);
 }
 	
