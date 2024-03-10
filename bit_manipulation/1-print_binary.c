@@ -24,7 +24,6 @@ unsigned long int _pow(unsigned long int base, unsigned int power)
  * @n: number to print
  * return: void
  */
- 
 void print_binary(unsigned long int n)
 {
 	unsigned long int divisor, check;
