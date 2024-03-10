@@ -5,23 +5,27 @@
  * binary_to_uint - function that converts a binary number 
  * @b: pointer to const and is NULL
  * @unsigned: unsigned int
- * return: 0
+ * return: the converted number or 0 
  */
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int val = 0;
-	int i = 0;
+	int a;
+	unsigned int num;
 
-	if (b == NULL)
+	num = 0;
+	if (!b)
 		return (0);
-
-	while (b[i] == '0' || b[i] == '1')
+	for (a = 0; b[a] != '\0'; a++)
 	{
-		val <<= 1;
-
-		val += b[i] - '0';
-		i++;
+		if (b[a] != '0' && b[a] != '1')
+			return (0);
 	}
-	return (val);
+	for (a = 0; b[a] != '\0'; a++)
+	{
+		num <<= 1;
+		if (b[a] == '1')
+			num += 1;
+	}
+	return (num);
 }
