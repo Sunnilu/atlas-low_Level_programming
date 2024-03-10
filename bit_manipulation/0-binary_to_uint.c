@@ -2,10 +2,10 @@
 #include <string.h>
 
 /**
- * binary_to_uint - function that converts a binary number 
+ * binary_to_uint - function that converts a binary number
  * @b: pointer to const and is NULL
  * @unsigned: unsigned int
- * return: the converted number or 0 
+ * return: the converted number or 0
  */
 
 unsigned int binary_to_uint(const char *b)
