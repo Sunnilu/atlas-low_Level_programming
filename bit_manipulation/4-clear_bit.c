@@ -5,6 +5,7 @@
  * clear_bit - function that sets the value of a bit to 0 at a given index
  * @n: parameter
  * @index: indext of the bit I want to set
+ * @clearbit: a printf converter to print in binary format
  * return: 1 of it works or -1 if it doesn't
  */
 
