@@ -6,8 +6,8 @@
 #include <stdio.h>
 
 /**
- * append_text_to_file - a function that appends text at the end of a file
- * @filename: the name of the file
+ * append_text_to_file - add text to a existing file
+ * @filename: the name of the file to append content to
  * @text_content: the content to be appended to the file
  * return: 1 on success and -1 if not
  */
