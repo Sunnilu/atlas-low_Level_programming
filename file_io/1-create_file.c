@@ -4,7 +4,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 /**
- * create_file - program creates a file
+ * create_file - program creates a file writes into a file
  * @filename: filename
  * @text_content: content wrote into the file
  * return: 1- if successful or -1 if it fails
@@ -25,14 +25,15 @@ int create_file(const char *filename, char *text_content)
 
 	fclose(file_ptr);
 
-	return (0);
+	return (1);
 }
 int main()
 {
 	const char *filename = "example.txt";
 	char text_content[] = "this is an example content.";
 
-	if (create_file(filename, text_content) == 0)
+	int result = (create_file(filename, text_content));
+			if (result == 1)
 	{
 		printf("file created and saved successfully.\n");
 	}
