@@ -15,7 +15,7 @@ void error_file(int file_from, int file_to, char *argv[])
 {
 	if (file_from == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: can't read from file %s\n", argv[1	]);
+		dprintf(STDERR_FILENO, "Error: can't read from file %s\n", a	    rgv[1]);
 		exit(98);
 	}
 	if (file_to == -1)
@@ -31,7 +31,8 @@ void error_file(int file_from, int file_to, char *argv[])
  * return: 0 on success
  */
 
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[]) 
+{
     int fd_from, fd_to;
     char buffer[1024];
     ssize_t bytes_read, bytes_written;
