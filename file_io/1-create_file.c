@@ -1,7 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <fcntl.h>
+#include <unistd.h>
 /**
  * create_file - program creates a file
  * @filename: filename
