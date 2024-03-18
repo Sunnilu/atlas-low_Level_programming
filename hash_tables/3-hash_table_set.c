@@ -1,10 +1,10 @@
 #include "hash_tables.h"
-#include <stdlib.h>
+
 
 /**
  * make_hash_node - creates a new hash node
  * @key: key for the node 
- * @value: the value of the node
+ * @value: the value for the node
  * return: the new node, if fails then NULL
  */
 hash_node_t *make_hash_node(const char *key, const char *value)
@@ -40,14 +40,14 @@ hash_node_t *make_hash_node(const char *key, const char *value)
  * return: 1 on success, 0 if it fails
  */
 
-int hash_table_set(hash_table_t *ht, const char *key, const char)
+int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;
 	hash_node_t *hash_node, *tmp;
 	char *new_value;
 
 	if (ht == NULL || ht->array == NULL || ht->size == 0 || key == NULL
-		|| strlen(key) == 0 || value == NULL)
+	    || strlen(key) == 0 || value == NULL)
 			return (0);
 	index = key_index((const unsigned char *)key, ht->size);
 	tmp = ht->array[index];
