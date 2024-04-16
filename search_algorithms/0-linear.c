@@ -12,6 +12,8 @@
 int linear_search(int *array, size_t size, int value)
 {
 	size_t i;
+	int found;
+
     if (array == NULL) {
         printf("Array is NULL\n");
         return (-1);
