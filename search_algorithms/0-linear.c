@@ -15,8 +15,8 @@ int linear_search(int *array, size_t size, int value)
 	{
 		return (-1);
 	}
- 	size_t i;
-        for (i = 0; i < size; i++)
+ 	
+        for (i = 0; i < size; i++) /* moved declaration of i here*/
 	{
 		 printf("Comparing %d with %d\n", array[i], value);
 
