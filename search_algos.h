@@ -31,11 +31,11 @@ typedef struct skiplist_s
     size_t index;
     struct skiplist_s *next;
     struct skiplist_s *express;
-}skiplist_s
+}skiplist_s;
 int linear_search(int *array, size_t size, int value);
 int binary_search(int *array, size_t size, int value);
 
-endif/* SEARCH_ALGOS_ */
+endif /* SEARCH_ALGOS_ */
 
 
 
