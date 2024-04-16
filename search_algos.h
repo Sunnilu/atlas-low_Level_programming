@@ -16,7 +16,7 @@ typedef struct listint_s
     int n;
     size_t index;
     structlistint_s *next;
-}listint_t
+}listint_t;
 
 /**
 * structs skiplist_s - singly linked list with an express lane
@@ -35,7 +35,7 @@ typedef struct skiplist_s
 int linear_search(int *array, size_t size, int value);
 int binary_search(int *array, size_t size, int value);
 
-endif /* SEARCH_ALGOS_ */
+endif; /* SEARCH_ALGOS_ */
 
 
 
