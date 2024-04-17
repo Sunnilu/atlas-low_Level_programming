@@ -11,8 +11,8 @@
 #include <stdio.h>
 
 int binary_search(int *array, size_t size, int value) {
-    size_t left = 0, right = size - 1, mid; // Declarations and initializations moved here
-    size_t i; // Declaration of i moved here
+    size_t left = 0, right = size - 1, mid; 
+    size_t i; 
 
     if (array == NULL) {
         printf("Array is NULL\n");
@@ -29,7 +29,7 @@ int binary_search(int *array, size_t size, int value) {
         mid = left + (right - left) / 2;
 
         if (array[mid] == value) {
-            printf("Found at index: %zu\n", mid);
+            printf("Found at index: %ld\n", mid);
             return mid;
         }
 
