@@ -11,8 +11,8 @@
 
 #include <stdio.h>
 
-int linear_search(int *array, size_t size, int value) {
-    size_t i;
+int linear_search(int *array, size_t size, int value) 
+{ size_t i;
 
     if (array == NULL) {
         printf("Array is NULL\n");
@@ -20,14 +20,15 @@ int linear_search(int *array, size_t size, int value) {
     }
 
     for (i = 0; i < size; i++) {
+        printf("Value checked array[%lu] = [%d]\n", i, array[i]);
         if (array[i] == value) {
             printf("Found %d at index: %lu\n", value, i);
-            return (i); /* Return the index of the first occurrence */
+            return (i); 
         }
     }
 
     printf("Value not found in the array\n");
-    return (-1); /* Return -1 if the value is not found */
+    return (-1); 
 }
 
 
