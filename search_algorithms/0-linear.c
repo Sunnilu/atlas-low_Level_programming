@@ -9,8 +9,6 @@
  * return: -1, if the value is NULL or not present in the array
  */
 
-#include <stdio.h>
-
 int linear_search(int *array, size_t size, int value) 
 { 
     int i;
