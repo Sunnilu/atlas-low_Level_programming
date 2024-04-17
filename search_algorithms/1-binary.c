@@ -8,30 +8,28 @@
 * @value: the value to search for
 */
 
+#include <stdio.h>
+
 int binary_search(int *array, size_t size, int value) {
-   size_t left, right, mid;
-   size_t i;
+    size_t left = 0, right = size - 1, mid; // Declarations and initializations moved here
+    size_t i; // Declaration of i moved here
 
     if (array == NULL) {
         printf("Array is NULL\n");
         return -1;
     }
 
-    size_t left = 0;
-    size_t right = size - 1;
-
     while (left <= right) {
-       
         printf("Searching in array: ");
-        for (i = left; i <= (size_t)right; i++) {
+        for (i = left; i <= right; i++) {
             printf("%d ", array[i]);
         }
         printf("\n");
 
-        mid = left + (size_t)(right - left) / 2;
+        mid = left + (right - left) / 2;
 
         if (array[mid] == value) {
-            printf("Found at index: %ld\n", mid);
+            printf("Found at index: %zu\n", mid);
             return mid;
         }
 
