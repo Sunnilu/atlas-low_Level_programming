@@ -9,33 +9,25 @@
  * return: -1, if the value is NULL or not present in the array
  */
 
-int linear_search(int *array, size_t size, int value)
-{
-	size_t i;
-	int found = 0;
+#include <stdio.h>
+
+int linear_search(int *array, size_t size, int value) {
+    size_t i;
 
     if (array == NULL) {
         printf("Array is NULL\n");
         return (-1);
     }
- 
+
     for (i = 0; i < size; i++) {
-        printf("Value checked array[%lu] = [%d]\n", i, array[i]);
-        if (array[i] == value && !found) {
+        if (array[i] == value) {
             printf("Found %d at index: %lu\n", value, i);
-            found = 1; 
-            return (i); 
+            return (i); /* Return the index of the first occurrence */
         }
     }
-    
-    if (!found) {
-        printf("Value not found in the array\n");
-        return (-1); 
-    }
-    
-    return (-1); 
-}
- value_to_search);
-    }
 
-    return 0;
+    printf("Value not found in the array\n");
+    return (-1); /* Return -1 if the value is not found */
+}
+
+
