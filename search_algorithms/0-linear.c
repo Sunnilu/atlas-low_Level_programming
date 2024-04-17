@@ -35,18 +35,7 @@ int linear_search(int *array, size_t size, int value)
     
     return (-1); 
 }
-int main() {
-    int array[] = {10, 1, 42, 3, 3};
-    size_t size = sizeof(array) / sizeof(array[0]);
-
-    int value_to_search = 3;
-    int index = linear_search(array, size, value_to_search);
-
-    if (index != -1) {
-        printf("%d found at index: %d\n", value_to_search, index);
-    } else {
-        printf("%d not found in the array\n", value_to_search);
+ value_to_search);
     }
 
     return 0;
-}
